@@ -1,0 +1,646 @@
+/* Below show */
+#below-button {
+  background-color: green;
+  display: absolute;
+  margin-bottom: 400px;
+  z-index: 1;
+}
+body {
+  overflow-y: auto;
+  /* background-color:rgb(217, 255, 233); */
+  z-index: 1;
+  height: 100%;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serifr;
+  margin-bottom: 6.3%;
+}
+
+/* ************* Style Scroll Bar  ************** */
+/* The scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 40px;
+  background-color: #000;
+}
+
+/* The scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #123dfc;
+  transition: 0.5s ease-in-out;
+}
+
+/* When the scrollbar is hovered */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1035d7;
+  /* background-color: #ff0000; */
+}
+
+/* ************* Invalid Input Field  ************** */
+.invalid-input {
+  color: red;
+  margin-top: 3px;
+  display: block;
+  margin-left: 25px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  transition: 1s ease-in-out;
+}
+/* ************* logo/image  ************* */
+.logo {
+  border-radius: 50%;
+  margin-top: 3px;
+  margin-left: 20px;
+  float: left;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.logo img {
+  width: 70px;
+  /* height: 25px; */
+}
+.logo img:hover {
+  cursor: pointer;
+}
+/* ************* user name, Logout page  ************* */
+.logout {
+  /* margin-left: 34%; */
+  margin-right: 5%;
+  margin-top: 2%;
+}
+.user-name {
+  /* margin-top: 50px; */
+  display: flex;
+}
+.user-name-heading {
+  color: #000;
+  text-transform: capitalize;
+  margin-right: 14px;
+}
+/* *************** log out button  *************** */
+.logbtn-hide {
+  display: none;
+}
+#lgin-btn-remove {
+  display: none;
+}
+.logout-btn2 {
+  display: block;
+}
+.logout-btn {
+  margin: 25px;
+  padding: 11px;
+  width: 150px;
+  background-color: #000;
+  border: 1px solid grey;
+  cursor: pointer;
+  color: #fff;
+  height: 50px;
+}
+.logout-btn {
+  margin: 3px;
+  padding: 0;
+}
+.logout-btn:hover {
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  letter-spacing: 2.4px;
+}
+#err {
+  display: none;
+}
+.nav-ul li {
+  display: inline-block;
+  padding: 10px;
+}
+.nav-ul li a {
+  padding: 5px;
+  text-decoration: none;
+  color: #fff;
+}
+.nav {
+  /* *************** position:relative;  *************** */
+  /* *************** margin: 40px;  *************** */
+  /* *************** padding: 40px;  *************** */
+  /* *************** padding-bottom: 20px;  *************** */
+  margin-bottom: 5.4rem;
+  /* display: flex; */
+  flex-grow: 1;
+  pad: 20px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 0.6px;
+  margin-bottom: 80px;
+}
+.nav-ul {
+  color: #fff;
+  left: 0;
+  top: 0px;
+  padding: 0;
+  margin: 0;
+  /* background-color: rgb(221, 149, 245); */
+  background-color: #000;
+  margin-bottom: 40px;
+  position: fixed;
+  width: 100%;
+  /* *************** text-align: center;  *************** */
+  display: flex;
+  padding-top: 7px;
+  align-items: center;
+  padding: 0px;
+  /* padding-left: 13px; */
+}
+.nav-ul li {
+  color: #fff;
+  cursor: pointer;
+  margin-left: 4px;
+}
+.nav-ul li:hover {
+  /* background-color: #000; */
+  border-radius: 7px;
+  background-color: #240707;
+  transition: 0.3s ease-in-out;
+}
+/* *************** footer  *************** */
+.temp-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 10%; */
+  /* background-color: rgb(221, 149, 245); */
+  background-color: #131111;
+  margin-bottom: 0;
+  bottom: 0;
+  color: #fff;
+  position: fixed;
+  flex-direction: row-reverse;
+  width: 100%;
+  /* 
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+  margin: 0%; */
+}
+/* *************** signup page  *************** */
+.register {
+  /* *************** margin-left: 30%;  *************** */
+  margin-top: 71px;
+  /* margin-left: 30%; */
+  margin-bottom: 104px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ***************  *** and login page  *************** */
+.login {
+  margin-top: 68px;
+  margin-bottom: 163.4px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* margin-left: 28%; */
+}
+.inputBox {
+  display: block;
+  margin: 25px;
+  padding: 7px;
+  width: 300px;
+  border: 1px solid #000;
+  margin-bottom: 0;
+  /* background-color: #282c34; */
+  /* color: black; */
+  /* font-size: 15px; */
+  font-weight: 621;
+}
+/* *************** signup button  *************** */
+.appButton {
+  margin: 25px;
+  padding: 11px;
+  width: 150px;
+  background-color: #000;
+  border: 1px solid grey;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 0;
+}
+.appButton:hover {
+  border-radius: 10px;
+  transition: 0.3s ease-in-out;
+  letter-spacing: 2.4px;
+}
+/* ****************** Not have account button ********************** */
+.no-account-heading {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex: wrap;
+  color: red;
+  margin-top: 20px;
+  margin-left: 25px;
+}
+.no-account-subheading {
+  list-style: none;
+  margin-left: 37px;
+}
+.no-account-subheading:hover {
+  color: #000;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ************* Add Prodcut (Product List Page) ************** */
+.product {
+  margin-top: 2%;
+  /* margin-bottom: 110px; */
+}
+/* ******* Product Added Successfully display message ******* */
+/* #added-product-message */
+.animate-all {
+  position: relative;
+  /* background-color: #000; */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 450;
+  animation: move-and-change 3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* width: 40px; */
+  /* height: 40px; */
+  padding-right: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+@keyframes move-and-change {
+  0% {
+    letter-spacing: 2px;
+    left: 0;
+    color: red;
+    margin-top: 50px;
+  }
+  50% {
+    letter-spacing: 3px;
+    margin-top: 50px;
+    left: 20%;
+    color: blue;
+  }
+  100% {
+    /* width: 120px; */
+    letter-spacing: 3px;
+    margin-top: 50px;
+    bottom: 100%;
+    color: green;
+  }
+} /* *************  Prodcut List (Product List Page) ************** */
+.product-btn {
+  list-style: none !important;
+  font-weight: 400px;
+  letter-spacing: 1.4px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 73px;
+  height: 21 px;
+  border: 1px;
+  border-radius: 13px;
+  background-color: #ff0000;
+  color: white;
+}
+#product-btn {
+  background-color: #2045ec;
+}
+#product-btn:hover {
+  background-color: rgb(3, 101, 249);
+  /* color: #fff; */
+}
+.product-btn:hover {
+  cursor: pointer;
+  background-color: rgb(200, 0, 0);
+  /* color: white; */
+}
+.product-list {
+  text-align: center;
+  margin-top: 2%;
+  /* margin-bottom: 100px; */
+}
+.product-list h1 {
+  margin-bottom: 21px;
+  /* display: flex; */
+  /* margin-right: 0px; */
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+  margin-left: 210px;
+}
+.product-list h1 .search-product-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  float: right;
+  border-top: none;
+  border-left: none;
+  border-right: 2px solid #7f5f53;
+  border-bottom: 2px solid #834949;
+  transition: 0.4s ease-in-out;
+  letter-spacing: 1.3px;
+  font-weight: 510;
+  border-radius: 50px;
+  padding-left: 20px;
+}
+/* ******************** Search Product ********************** */
+.search-product-box {
+  padding: 10px;
+  width: 270px;
+  margin: 0;
+}
+/* ******************** Search Product Not Found ********************** */
+.search-not-found {
+  margin-left: 0px;
+  background: transparent;
+  margin-right: 250px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 450;
+  letter-spacing: 3px;
+  margin-top: 45px;
+}
+
+.product-list ul li {
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #000;
+  width: 150px;
+}
+.product-list ul:hover {
+  background-color: azure;
+}
+.product-list ul {
+  margin: 0;
+  margin-left: 5px;
+  padding: 0;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.product-list #list-heading {
+  font-weight: 700;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* *************** Here is responsive media queries code is as follows */
+@media (max-width: 768px) {
+  /* *************** Responsive for Tablets  ************** */
+  .nav {
+    margin-bottom: 0;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .logo {
+    float: none;
+    margin: 0 auto;
+  }
+  .logout {
+    margin-left: 0;
+  }
+  .user-name {
+    text-align: center;
+  }
+  .user-name-heading {
+    margin-right: 0;
+  }
+  .logout-btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 425px) {
+  /* *************** Responsive for Mobiles  ************** */
+  .nav {
+    display: block;
+  }
+  .logo {
+    float: left;
+    margin-top: 3px;
+    margin-left: 20px;
+  }
+  .logout {
+    margin-left: 34%;
+  }
+  .user-name {
+    margin-top: 50px;
+    display: flex;
+  }
+  .user-name-heading {
+    color: #000;
+    text-transform: capitalize;
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 1024px) {
+  /* *************** Responsive for iPhone12 Pro  ************** */
+  .nav {
+    display: block;
+    margin-top: 5.5rem;
+    /* overflow: hidden; */
+    margin-left: 0;
+  }
+  .nav-ul {
+    display: block;
+  }
+  .inputBox {
+    width: 200px;
+  }
+  .product {
+    /* margin-right: 50px; */
+  }
+  .product h1 {
+    margin-left: 20px;
+  }
+  .App {
+    margin-right: 50px;
+    /* overflow: hidden; */
+  }
+  .logout {
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: 50px;
+  }
+  .footer {
+    width: 100%;
+    /* margin-left: 0; */
+    padding-right: 140px;
+    text-align: center;
+    padding-left: 100px;
+  }
+  .nav-ul {
+    margin-left: 0;
+    height: 60px;
+    display: flex;
+    font-size: 14px;
+  }
+  .nav-ul li {
+    padding: 4px;
+  }
+  .logo {
+    display: none;
+  }
+  .product-list {
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 0rem;
+    display: flex;
+    flex: start;
+    align-items: start;
+    justify-content: start;
+  }
+  .product-list h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-right: 340px;
+  }
+  .product-list input {
+    margin: 0px;
+    margin-top: 9px;
+    margin-bottom: 13px;
+  }
+  .product-list ul {
+    margin-left: 180px;
+    margin-right: 0;
+  }
+  .product-list ul li {
+    /* background-color: #ff0000 ; */
+    /* margin: 0; */
+    width: 34px;
+    font-size: 9px;
+    font-weight: 600;
+    /* display: flex;
+    flex-direction: row; */
+  }
+  .product-btn {
+    /* background-color: transparent; */
+    width: 34px;
+    font-size: 9px;
+    margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media (max-width: 1130px) and (max-height: 1180px) {
+  .product-list ul li {
+    width: 100px;
+  }
+  .product-list h1 {
+    margin-left: 15px;
+    margin-top: 35px;
+    margin-bottom: 27px;
+  }
+  .product {
+    margin-right: 70px;
+    margin-top: 35px;
+  }
+  .logout {
+    margin-right: 70px;
+    margin-top: 35px;
+    margin-right: 141px;
+  }
+  .logout-btn {
+    margin-left: 24px;
+  }
+}
+
+@media (max-width: 786px) {
+  .product-list ul li {
+    width: 90px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  .product-list h1 {
+    margin-left: 44px;
+
+    margin-left: 18rem;
+    margin-right: 7rem;
+  }
+  .product-list ul li {
+    width: 40px;
+    padding: 10px;
+    font-size: 15px;
+  }
+  .nav-ul {
+    /* background-color: red; */
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* Header Styles */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* Footer Styles */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  /* ... existing styles ... */
+
+  /* Adjustments for heading and search box */
+  .product-list h1 {
+    margin-left: 44px;
+    margin-left: 18rem;
+    margin-right: 7rem;
+    margin-top: 80px;
+  }
+
+  .search-product-box {
+    margin-left: 44px;
+    margin-right: 7rem;
+    margin-bottom: 20px;
+  }
+}
